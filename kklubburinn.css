@@ -50,12 +50,14 @@ body{
 	margin: 20px 0px;
 	padding: 30px;
 	background: #ff4747;
+	border-style: double;
+	border-width: 5px;
 }
 #the_footer{
 	clear: both;
 	text-align: center;
 	padding: 20px;
-	border-top: 5px solid black;
+	border-top: 2px solid black;
 	background: #ff4755;
 }
 article{
