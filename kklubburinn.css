@@ -21,7 +21,7 @@ body{
 	text-align: left;
 }
 #top_header{
-	background: ff4755;
+	background: -webkit-linear-gradient(bottom left, #FF4755 0%, #FF8C47 100%);
 	border: 1px solid black;
 	padding: 20px;
 }
@@ -58,11 +58,12 @@ body{
 	text-align: center;
 	padding: 20px;
 	border-top: 2px solid black;
-	background: -webkit-linear-gradient(left, #FF4755 0%, #00A3EF 100%);
+	background:  -webkit-linear-gradient(left, #FF4755 0%, #FF8C47 100%);
 }
 article{
-	background: #ff5547;
-	border: 1px #ff7147;
+	background: #ff4755;
+	border-style: double;
+	border-width: 5px;
 	padding: 20px;
 	margin-bottom: 15px;
 }
