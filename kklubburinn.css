@@ -16,18 +16,22 @@ body{
 }
 #big_wrapper{
 	border: 1px solid black;
-	width: 1000px;
+	width: 1024px;
 	margin: 20px auto;
 	text-align: left;
-	background: #BAC4BA;
 }
 #top_header{
-	background: #94A494;
+	background: #d684bf;
 	border: 1px solid black;
 	padding: 20px;
 }
+#cImg{
+	margin:0;
+	padding: 0;
+	border-bottom: 1px solid black;
+}
 #menu{
-	background: #D6DCD6;
+	background: #d684bf;
 }
 #menu li{
 	display: inline-block;
