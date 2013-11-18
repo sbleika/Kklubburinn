@@ -21,7 +21,7 @@ body{
 	text-align: left;
 }
 #top_header{
-	background: #d684bf;
+	background: ff4755;
 	border: 1px solid black;
 	padding: 20px;
 }
@@ -31,7 +31,7 @@ body{
 	border-bottom: 1px solid black;
 }
 #menu{
-	background: #d684bf;
+	background: #ff4755;
 }
 #menu li{
 	display: inline-block;
@@ -49,18 +49,18 @@ body{
 	width: 220px;
 	margin: 20px 0px;
 	padding: 30px;
-	background: #D6DCD6;
+	background: #ff4747;
 }
 #the_footer{
 	clear: both;
 	text-align: center;
 	padding: 20px;
 	border-top: 2px solid black;
-	background: #94A494;
+	background: #ff4755;
 }
 article{
-	background: #D6DCD6;
-	border: 1px #715E4B;
+	background: #ff5547;
+	border: 1px #ff7147;
 	padding: 20px;
 	margin-bottom: 15px;
 }
