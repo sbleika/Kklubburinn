@@ -12,14 +12,18 @@ header, section, footer, aside, nav, article, hgroup, img{
 	display: block;
 }
 body{
-	text-align: center;
+	text-align: center;	
+	background-image:url('myndir/bakgrunnur.jpg');
 }
+
 #big_wrapper{
 	border: 1px solid black;
 	width: 1024px;
 	margin: 20px auto;
 	text-align: left;
+	background-color:#800080;
 }
+
 #cImg{
 	margin:0;
 	padding: 0;
