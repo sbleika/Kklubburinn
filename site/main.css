@@ -20,23 +20,20 @@ body{
 	margin: 20px auto;
 	text-align: left;
 }
-
 #cImg{
 	margin:0;
 	padding: 0;
 	border-bottom: 1px solid black;
 }
 #menu{
-	background: #D9AFF1;
-	border-bottom: 1px solid black;
-	text-align: center;
+	background: #ff4755;
 }
 #menu li{
-	text-align: center;
 	display: inline-block;
 	list-style: none;
 	padding: 5px;
 	font: bold 14px Tahoma
+	
 }
 #texti{
 	float: left;
@@ -48,31 +45,34 @@ body{
 	width: 220px;
 	margin: 30px 0px;
 	padding: 30px;
-	background: #D9AFF1;
-	border: 1px solid black;
+	background: #ff4747;
+	border-style: double;
+	border-width: 5px;
 }
 #the_footer{
 	clear: both;
 	text-align: center;
 	padding: 20px;
 	border-top: 2px solid black;
-
-	background: -webkit-linear-gradient(left, #FF4755 0%, #00A3EF 100%);
-	position: bottom fixed;
+	background:  -webkit-linear-gradient(left, #FF4755 0%, #FF8C47 100%);
 }
 article{
-	background: #D9AFF1;
-	border: 1px solid black;
-
-	
-}
-article{
+	background: #ff4755;
+	border-style: double;
+	border-width: 5px;
 	padding: 20px;
 	margin-bottom: 15px;
-	background: #ff4755;
-	border: 5px;
-
-
 }
 article header{
-	margi
+	margin-bottom: 15px;
+}
+article footer{
+	text-align: right;
+}
+article p{
+	margin-bottom: 15px;
+}
+img{
+	margin: 10px;
+	 height: 150px;
+}
