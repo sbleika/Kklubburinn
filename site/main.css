@@ -17,11 +17,11 @@ body{
 }
 
 #big_wrapper{
-	border: 1px solid black;
+	border: 5px solid black;
 	width: 1024px;
 	margin: 20px auto;
 	text-align: left;
-	background-color:#800080;
+	background color:#800080;
 }
 
 #cImg{
