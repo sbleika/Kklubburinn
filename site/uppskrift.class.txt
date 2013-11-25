@@ -1,0 +1,113 @@
+<?php
+
+// Klasi sem heldur utan um hvaða field og hvaða villa kom upp
+class ValidationError
+{
+	public $field;
+	public $error;
+}
+
+// til hægðarauka, býr til nýjann villuhlut og skilar
+function MakeError($field, $error)
+{
+	$o = new ValidationError();
+	$o->field = $field;
+	$o->error = $error;
+
+	return $o;
+}
+
+/**
+ * Klasi sem skilgreinir viðburð
+ */
+class Event
+{
+	public $title;
+	public $start;
+	public $end;
+	public $description;
+	public $location;
+
+	private $errors;
+
+	// setjum villurnar okkar sem tómafylkið
+	function __construct()
+	{
+		$this->errors = array();
+	}
+
+	// fyllir út í breytur hlutar með gildum úr associative array 
+	public function populate($data)
+	{
+		$this->title 		= $this->get($data, 'title');
+		$this->start 		= strtotime($this->get($data, 'start'));
+		$this->end 			= strtotime($this->get($data, 'end'));
+		$this->description 	= $this->get($data, 'description');
+		$this->location 	= $this->get($data, 'location');
+	}
+
+	// athugar nokkrar reglur um gögnin og bætir við í errors fylkið hverri villu. Skilar true ef engar villur, false annars
+	public function valid()
+	{
+		if ($this->title === '')
+		{
+			$this->errors[] = MakeError('title', 'Tilgreina verður titil');
+		}
+
+		if (strlen($this->title) > 100)
+		{
+			$this->errors[] = MakeError('title', 'Titill má ekki vera lengri en 100 stafir');
+		}
+
+		if (!$this->start)
+		{
+			$this->errors[] = MakeError('start', 'Tilgreina verður byrja dagsetningu');
+		}
+
+		if ($this->description === '')
+		{
+			$this->errors[] = MakeError('description', 'Tilgreina verður lýsingu');
+		}
+
+		if (strlen($this->description) > 2000)
+		{
+			$this->errors[] = MakeError('description', 'Lýsing má ekki vera lengri en 2000 stafir');
+		}
+
+		if (strlen($this->location) > 100)
+		{
+			$this->errors[] = MakeError('location', 'Staðsetning má ekki vera lengri en 100 stafir');
+		}
+
+		// ef engin villa hefur komið upp er fylkið okkar tómt
+		return sizeof($this->errors) == 0;
+	}
+
+	// skilar gögnum úr hlut á því formi sem prepared statement býst við
+	public function insert()
+	{
+		return array(	':title' 		=> $this->title,
+						':start' 		=> $this->start,
+						':end'			=> $this->end,
+						':description'	=> $this->description,
+						':location' 		=> $this->location
+			);
+	}
+
+	// skilar private breytunni errors
+	public function errors()
+	{
+		return $this->errors;
+	}
+
+	// til hægðarauka - sækir gildi úr fylki ef það er skilgreint, annars skilar það tómastrengnum
+	private function get($array, $key)
+	{
+		if (isset($array[$key]))
+		{
+			return $array[$key];
+		}
+
+		return '';
+	}
+}
