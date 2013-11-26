@@ -6,7 +6,9 @@
 		<link rel="stylesheet" href="uppskriftin.css">
 	</head>
 	<body>
-		<div class="wrapper">
+		<div id="big_wrapper">
+			<img id="cImg"src="myndir/cover.jpg" alt="Kökuklúbburinn covermynd" ></img>
+			
 			<h1>Leggðu inn þína uppáhalds uppskrift</h1>
 			<h2>og njóttu þess að taka út margfalt tilbaka!</h2>
 
