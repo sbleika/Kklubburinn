@@ -23,7 +23,10 @@ body{
 	margin: 10px auto;
 	text-align: left;
 	background:#cb0077;
+<<<<<<< HEAD
+=======
 	height: 100%;
+>>>>>>> 41b44dc99f4ab8886a38d06b6bb0612dc9b8e89d
 	margin: 20px auto;
 	text-align: left;
 	background-color:#ded085;
@@ -36,7 +39,10 @@ body{
 }
 
 #menu{
+<<<<<<< HEAD
+=======
 
+>>>>>>> 41b44dc99f4ab8886a38d06b6bb0612dc9b8e89d
 	background: #E5399E;
 	background: #ff4755;
 	text-align: center;
@@ -67,15 +73,23 @@ body{
    	bottom:0;
 	clear: both;
 	width: 100%;
+<<<<<<< HEAD
+	height: 100px;
+	margin-top: 100px;
+	background: #84004d; /* Old browsers */
+	/*background: -moz-linear-gradient(top,  #ff4755 0%, #fcaa46 100%); /* FF3.6+ */
+	/*background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff4755), color-stop(100%,#fcaa46)); /* Chrome,Safari4+ */
+	/*background: -webkit-linear-gradient(top,  #ff4755 0%,#fcaa46 100%); /* Chrome10+,Safari5.1+ */
+	/*background: -o-linear-gradient(top,  #ff4755 0%,#fcaa46 100%); /* Opera 11.10+ */
+	/*background: -ms-linear-gradient(top,  #ff4755 0%,#fcaa46 100%); /* IE10+ */
+	/*background: linear-gradient(to bottom,  #ff4755 0%,#fcaa46 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff4755', endColorstr='#fcaa46',GradientType=0 );*//* IE6-9 */
+	float: bottom;
+	text-align: center;
+	line-height: 10;
+=======
+>>>>>>> 41b44dc99f4ab8886a38d06b6bb0612dc9b8e89d
 	height: 7%;
-	background: #ff4755; /* Old browsers */
-	background: -moz-linear-gradient(top,  #ff4755 0%, #fcaa46 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff4755), color-stop(100%,#fcaa46)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #ff4755 0%,#fcaa46 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #ff4755 0%,#fcaa46 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #ff4755 0%,#fcaa46 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  #ff4755 0%,#fcaa46 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff4755', endColorstr='#fcaa46',GradientType=0 ); /* IE6-9 */
 	text-align: center;
 	line-height: 3;
 	font-size: 18px;
