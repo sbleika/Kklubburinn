@@ -1,3 +1,4 @@
+html, body { height: 100%; }
 *{
 	margin: 0px;
 	padding: 0px;
@@ -15,30 +16,42 @@ header, section, footer, aside, nav, article, hgroup, img{
 	display: block;
 }
 body{
+	 font: 12px/2em;
 	text-align: center;	
-	background-image:url('myndir/bakgrunnur.jpg');
-}
 
+	background-image:url('myndir/nr2.png');
+}
+#picture{
+	background-image:url('myndir/cover2.jpg');
+	max-width: 100%;
+	position: relative;
+	overflow: hidden;
+	height: 150px;
+}
 #big_wrapper{
-	border: 5px solid black;
-	width: 1024px;
-	height: 600px;
-	margin: 10px auto;
+	border: 2px solid black;
+	max-width: 1024px;
+	min-height: 100%;
 	text-align: left;
-	background:#cb0077;
-	margin: 20px auto;
+	background:#fff0fe;
+	margin: 0px auto;
 	text-align: left;
 }
 
 #cImg{
+	max-width: 100%;
+	position: relative;
+	overflow: hidden;
 	margin:0;
 	padding: 0;
 	border-bottom: 1px solid black;
+
 }
 
 #menu{
-	background: #E5399E;
+	background: #eddfed;
 	text-align: center;
+	border-bottom: 2px solid black;
 }
 #menu li{
 	display: inline-block;
@@ -57,51 +70,69 @@ body{
 	width: 220px;
 	margin: 30px 0px;
 	padding: 30px;
-	background: #E5399E;
-	border-style: double;
-	border-width: 5px;
+	background: #eddfed;
+	border: 2px solid black;
 }
 #the_footer{
 	position:fixed;
    	bottom:0;
 	clear: both;
 	width: 100%;
-	height: 100px;
+	height: 25px;
 	margin-top: 100px;
-	background: #84004d; /* Old browsers */
-	/*background: -moz-linear-gradient(top,  #ff4755 0%, #fcaa46 100%); /* FF3.6+ */
-	/*background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff4755), color-stop(100%,#fcaa46)); /* Chrome,Safari4+ */
-	/*background: -webkit-linear-gradient(top,  #ff4755 0%,#fcaa46 100%); /* Chrome10+,Safari5.1+ */
-	/*background: -o-linear-gradient(top,  #ff4755 0%,#fcaa46 100%); /* Opera 11.10+ */
-	/*background: -ms-linear-gradient(top,  #ff4755 0%,#fcaa46 100%); /* IE10+ */
-	/*background: linear-gradient(to bottom,  #ff4755 0%,#fcaa46 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff4755', endColorstr='#fcaa46',GradientType=0 );*//* IE6-9 */
+	background: #eddfed;
 	float: bottom;
 	text-align: center;
 	line-height: 10;
-	height: 7%;
-	text-align: center;
-	line-height: 3;
+	border-top: 2px solid black;
 	font-size: 18px;
 
 }
 article{
-	background: #E5399E;
-	border-style: double;
-	border-width: 5px;
+	background: #eddfed;
+	border: 2px solid black;
 	padding: 20px;
 	margin-bottom: 15px;
 }
-article header{
-	margin-bottom: 15px;
-}
-article footer{
-	text-align: right;
-}
-article p{
-	margin-bottom: 15px;
-}
+
 img{
 	margin: 10px;
 	 height: 150px;
+}
+
+@media screen 
+and (min-width : 0px) 
+and (max-width : 400px) {
+	body { font: 16px/1.5em 'open_sansregular', Verdana, sans-serif;
+}
+	#big_wrapper { width: 100%; 
+	}
+	#picture{
+		background-image:url('myndir/litla.jpg');
+		background-repeat: no-repeat;
+	}
+}
+
+@media screen 
+and (min-width : 400px)
+and (max-width : 800px)
+{
+	nav ul li { padding: 0 0.3em; }
+	
+	#picture{
+		background-image:url('myndir/midja.jpg');
+		background-repeat: no-repeat;
+	}
+}
+
+@font-face
+{
+    font-family: 'open_sansregular';
+    src: url('OpenSans-Regular-webfont.eot');
+    src: url('OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('OpenSans-Regular-webfont.woff') format('woff'),
+         url('OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }

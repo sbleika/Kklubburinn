@@ -85,10 +85,10 @@ include('views/form.php');
 // ef ekki er beðið um ákveðinn viðburð, sækja lista af öllum, raðað í dagsetningarröð
 if ($selected_uppskrift === 0)
 {
-	$select = $db->query("SELECT id, nafn, tegund, innskraning FROM uppskriftir ORDER BY tegund");
+	$select = $db->query("SELECT nafn, tegund, innskraning FROM uppskriftir ORDER BY nafn");
 
 	// $select breytan er notuð af view
-	//include('views/skranings_list.php');
+	include('views/skranings_list.php');
 }
 // annars sækja stakan viðburð
 else

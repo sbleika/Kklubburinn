@@ -9,6 +9,14 @@
 		<div id="big_wrapper">
 			<img id="cImg"src="myndir/cover.jpg" alt="Kökuklúbburinn covermynd" ></img>
 			
+			<nav id="menu">
+			<ul>
+				<li class="sel"><a href="Kokubankinn.html">Heim<li>
+				<li>Uppskriftir</li>
+				<li><a href="form/index.php">Skráning</li>
+			</ul>
+		</nav>
+		
 			<h1>Leggðu inn þína uppáhalds uppskrift</h1>
 			<h2>og njóttu þess að taka út margfalt tilbaka!</h2>
 
