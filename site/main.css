@@ -19,14 +19,13 @@ body{
 #bigwrapper{
 	border: 5px solid black;
 	width: 1024px;
-	height:600px;
+	height: 600px;
 	margin: 10px auto;
 	text-align: left;
 	background:#cb0077;
 	height: 100%;
 	margin: 20px auto;
 	text-align: left;
-	background-color:#ded085;
 }
 
 #cImg{
