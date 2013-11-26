@@ -8,6 +8,9 @@ h1{
 h2{
 	font: bold 14px Tahoma;
 }
+h4{
+	font: bold 14px Tahoma;
+}
 header, section, footer, aside, nav, article, hgroup, img{
 	display: block;
 }
@@ -16,13 +19,22 @@ body{
 	background-image:url('myndir/bakgrunnur.jpg');
 }
 
+<<<<<<< HEAD
 #bigwrapper{
 	border: 10px solid black;
+=======
+#big_wrapper{
+	border: 5px solid black;
+>>>>>>> 37b2d1413c24034109bd37452d7e72aefde2462f
 	width: 1024px;
 	height: 600px;
 	margin: 10px auto;
 	text-align: left;
+<<<<<<< HEAD
 	background:#cb0077;
+=======
+	background-color:#FFFFBB;
+>>>>>>> 37b2d1413c24034109bd37452d7e72aefde2462f
 	margin: 20px auto;
 	text-align: left;
 }
