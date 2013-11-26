@@ -1,0 +1,57 @@
+* { margin: 0; padding: 0; }
+
+body { 
+	font: 14px/2em Verdana, sans-serif; 
+	text-align: center;	
+	background-image:url('myndir/bakgrunnur.jpg'); 
+}
+h1{
+	font: bold 20px Tahoma;
+}
+h2{
+	font: bold 14px Tahoma;
+}
+header, section, footer, aside, nav, article, hgroup, img{
+	display: block;
+}
+body{
+	
+}
+
+#big_wrapper{
+	border: 5px solid black;
+	width: 1024px;
+	margin: 20px auto;
+	text-align: left;
+	background color:#800080;
+}
+/*.wrapper { margin: 0 auto; width: 80%; max-width: 1000px; }
+h1 { font: 4em/1.5em Georgia, serif; margin-bottom: 0em; box-sizing: border-box; border-bottom: 1px solid #eee; margin-bottom: 0.5em; text-align: center; } 
+h2 { font: 1.5em/1em Georgia, serif; }*/
+
+.uppskriftin { float: left; width: 60%; margin-bottom: 2em; }
+.uppskriftin a, .uppskriftin h2 { color: #f62; text-decoration: none; }
+.uppskriftin section { margin-bottom: 1.333em; }
+.uppskriftin .content { margin-top: 1em; }
+.uppskriftin .content p:first-of-type:first-letter { font: bold 4em/1em Georgia, serif; float: left; padding-right: 0.1em; }
+.uppskriftin .content p + p { text-indent: 2em; }
+.uppskriftin .content p + p:first-letter { font: normal 1em/2em Verdana, sans-serif; float: none; }
+
+.add { float: right; width: 40%; box-sizing: border-box; -moz-box-sizing: border-box; padding-left: 2em; }
+.add h2 { margin-bottom: 0.5em; }
+
+form div { margin-bottom: 1em; float: left; clear: left; }
+form label { width: 120px; float: left; }
+form input[type=text] { width: 242px; padding: 3px; }
+form textarea { width: 242px; padding: 3px; height: 120px; float: left; }
+form .buttons { clear: both; float: left; margin-top: 1em; }
+form .buttons input { padding: 4px; }
+form input.invalid, form textarea.invalid { border: 1px solid #c66; background: #fee;}
+
+div.errors { margin-bottom: 1em; padding: 0.5em; border: 1px solid #c66; background: #fee;  }
+div.errors ul { margin-left: 2em; }
+div.errors li { margin-bottom: 0.5em; }
+
+p.success { padding: 0.5em; border: 1px solid green; background: lightgreen; font-size: 2em; margin-bottom: 1em; }
+
+

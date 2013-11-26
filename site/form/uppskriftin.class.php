@@ -20,14 +20,12 @@ function MakeError($field, $error)
 /**
  * Klasi sem skilgreinir viðburð
  */
-class Event
+class uppskriftin
 {
-	public $title;
-	public $start;
-	public $end;
-	public $description;
-	public $location;
-
+	public $nafn;
+	public $tegund;
+	public $innskraning;
+	
 	private $errors;
 
 	// setjum villurnar okkar sem tómafylkið
@@ -39,45 +37,45 @@ class Event
 	// fyllir út í breytur hlutar með gildum úr associative array 
 	public function populate($data)
 	{
-		$this->title 		= $this->get($data, 'title');
-		$this->start 		= strtotime($this->get($data, 'start'));
-		$this->end 			= strtotime($this->get($data, 'end'));
-		$this->description 	= $this->get($data, 'description');
-		$this->location 	= $this->get($data, 'location');
+		$this->nafn 		= $this->get($data, 'nafn');
+		$this->tegund 		= $this->get($data, 'tegund');
+		$this->innskraning 	= $this->get($data, 'innskraning');
+	
 	}
 
 	// athugar nokkrar reglur um gögnin og bætir við í errors fylkið hverri villu. Skilar true ef engar villur, false annars
 	public function valid()
 	{
-		if ($this->title === '')
+				if ($this->nafn === '')
 		{
-			$this->errors[] = MakeError('title', 'Tilgreina verður titil');
+			$this->errors[] = MakeError('nafn', 'Skrá verður inn nafn');
 		}
 
-		if (strlen($this->title) > 100)
+		if (strlen($this->nafn) > 100)
 		{
-			$this->errors[] = MakeError('title', 'Titill má ekki vera lengri en 100 stafir');
+			$this->errors[] = MakeError('nafn', 'Nafnið má ekki vera lengri en 100 stafir');
 		}
 
-		if (!$this->start)
+		if ($this->tegund === '')
 		{
-			$this->errors[] = MakeError('start', 'Tilgreina verður byrja dagsetningu');
+			$this->errors[] = MakeError('tegund', 'Skrá verður inn tegund');
 		}
 
-		if ($this->description === '')
+		if (strlen($this->nafn) > 100)
 		{
-			$this->errors[] = MakeError('description', 'Tilgreina verður lýsingu');
+			$this->errors[] = MakeError('tegund', 'Tegundin má ekki vera lengri en 100 stafir');
 		}
 
-		if (strlen($this->description) > 2000)
+		if ($this->innskraning === '')
 		{
-			$this->errors[] = MakeError('description', 'Lýsing má ekki vera lengri en 2000 stafir');
+			$this->errors[] = MakeError('innskraning', 'Skrá verður inn uppskrift');
 		}
 
-		if (strlen($this->location) > 100)
+		if (strlen($this->innskraning) > 2000)
 		{
-			$this->errors[] = MakeError('location', 'Staðsetning má ekki vera lengri en 100 stafir');
+			$this->errors[] = MakeError('innskraning', 'uppskriftin má ekki vera lengri en 2000 stafir');
 		}
+
 
 		// ef engin villa hefur komið upp er fylkið okkar tómt
 		return sizeof($this->errors) == 0;
@@ -86,13 +84,13 @@ class Event
 	// skilar gögnum úr hlut á því formi sem prepared statement býst við
 	public function insert()
 	{
-		return array(	':title' 		=> $this->title,
-						':start' 		=> $this->start,
-						':end'			=> $this->end,
-						':description'	=> $this->description,
-						':location' 		=> $this->location
+		return array(	
+						':nafn' 		=> $this->nafn,
+						':tegund' 		=> $this->tegund,
+						':innskraning'	=> $this->innskraning,
 			);
 	}
+
 
 	// skilar private breytunni errors
 	public function errors()
@@ -110,4 +108,4 @@ class Event
 
 		return '';
 	}
-}
+} 
