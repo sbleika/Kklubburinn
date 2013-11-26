@@ -19,17 +19,13 @@ body{
 #bigwrapper{
 	border: 5px solid black;
 	width: 1024px;
-<<<<<<< HEAD
 	height:600px;
 	margin: 10px auto;
 	text-align: left;
 	background:#cb0077;
-=======
-	height: 100%;
 	margin: 20px auto;
 	text-align: left;
 	background-color:#ded085;
->>>>>>> 4927220cd255c1522ef14d8cbd6cfe26a3b6d879
 }
 
 #cImg{
@@ -39,12 +35,9 @@ body{
 }
 
 #menu{
-<<<<<<< HEAD
 	background: #E5399E;
-=======
 	background: #ff4755;
 	text-align: center;
->>>>>>> 4927220cd255c1522ef14d8cbd6cfe26a3b6d879
 }
 #menu li{
 	display: inline-block;
@@ -72,7 +65,6 @@ body{
    	bottom:0;
 	clear: both;
 	width: 100%;
-<<<<<<< HEAD
 	height: 100px;
 	margin-top: 100px;
 	background: #84004d; /* Old browsers */
@@ -86,19 +78,9 @@ body{
 	float: bottom;
 	text-align: center;
 	line-height: 10;
-=======
 	height: 7%;
-	background: #ff4755; /* Old browsers */
-	background: -moz-linear-gradient(top,  #ff4755 0%, #fcaa46 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff4755), color-stop(100%,#fcaa46)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #ff4755 0%,#fcaa46 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #ff4755 0%,#fcaa46 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #ff4755 0%,#fcaa46 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  #ff4755 0%,#fcaa46 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff4755', endColorstr='#fcaa46',GradientType=0 ); /* IE6-9 */
 	text-align: center;
 	line-height: 3;
->>>>>>> 4927220cd255c1522ef14d8cbd6cfe26a3b6d879
 	font-size: 18px;
 
 }
