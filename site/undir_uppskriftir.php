@@ -1,7 +1,9 @@
 <?php
 header('Content-Type: text/html; charset=utf-8');
 
-$db = new PDO('sqlite:form/db/uppskriftir.db') or die ('unable to connect');
+include('views/header.php');
+
+$db = new PDO('sqlite:db/uppskriftir.db') or die ('unable to connect');
 
 
 
@@ -23,15 +25,8 @@ echo "</table>";
 
 if (!$result) die("Cannot execute query.");
 
-$rows = sqlite_num_rows($result);
 
-$field1 = sqlite_field_name($result, 0);
-$field2 = sqlite_field_name($result, 1);
 
-echo "<table style='font-size:12;font-family:verdana'>";
-echo "<thead><tr>";
-echo "<th align='left'>$field1</th>";
-echo "<th align='left'>$field2</th>";
-echo "</tr></thead>";
 
-?>
+//loka síðu
+include('views/footer.php');

@@ -1,5 +1,5 @@
 <?php
-
+header('Content-Type: text/html; charset=utf-8');
 // til hægðarauka - prentar út "invalid" sem við notum í class nafn á input ef það er villa þar
 function is_invalid($field, $errors)
 {
@@ -15,6 +15,7 @@ function is_invalid($field, $errors)
 	}
 }
 ?>
+	
 			<section class="add">
 				<?php
 				// birtum aðeins villur ef einhverjar eru
@@ -31,6 +32,7 @@ function is_invalid($field, $errors)
 				<?php
 				// búum handvirkt til formið okkar og merkjum input með "invalid" ef villa á við þau og prentum út gildi hlutar ef þau eiga við
 				?>
+
 				<h2>Skráning</h2>
 				<form method="post" action="index.php">
 					<div>

@@ -2,21 +2,24 @@
 <html lang="is">
 	<head>
 		<meta charset="utf-8">
-		<title>Viðburðir</title>
+		<title>Skráning</title>
 		<link rel="stylesheet" href="uppskriftin.css">
 	</head>
 	<body>
 		<div id="big_wrapper">
-			<img id="cImg"src="myndir/cover.jpg" alt="Kökuklúbburinn covermynd" ></img>
+
+			<div id="picture">
+			</div>
+
 			
 			<nav id="menu">
-			<ul>
-				<li class="sel"><a href="Kokubankinn.html">Heim<li>
-				<li>Uppskriftir</li>
-				<li><a href="form/index.php">Skráning</li>
-			</ul>
-		</nav>
-		
+				<ul>
+					<li><a href="Kokubankinn.html">Heim</a><li>
+					<li><a href="undir_uppskriftir.php">Uppskriftir</a></li>
+					<li><a href="index.php">Skráning</a></li>
+				</ul>
+			</nav>
+
 			<h1>Leggðu inn þína uppáhalds uppskrift</h1>
 			<h2>og njóttu þess að taka út margfalt tilbaka!</h2>
 

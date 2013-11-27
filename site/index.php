@@ -82,25 +82,6 @@ if (isset($_GET['uppskriftir']) && is_numeric($_GET['uppskriftir']))
 include('views/header.php');
 include('views/form.php');
 
-// ef ekki er beðið um ákveðinn viðburð, sækja lista af öllum, raðað í dagsetningarröð
-if ($selected_uppskrift === 0)
-{
-	$select = $db->query("SELECT nafn, tegund, innskraning FROM uppskriftir ORDER BY nafn");
-
-	// $select breytan er notuð af view
-	include('views/skranings_list.php');
-}
-// annars sækja stakan viðburð
-else
-{
-	$stm = $db->prepare("SELECT id, nafn, tegund, innskraning FROM uppskriftir WHERE id = :id");
-	$stm->execute(array(':id' => $selected_uppskrift));
-
-	$data = $stm->fetch();
-
-	// $data breyta notuð af view
-	include('views/skraning.php');
-}
 
 // loka síðu
 include('views/footer.php');
