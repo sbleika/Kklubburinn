@@ -38,12 +38,12 @@ function is_invalid($field, $errors)
 				<form method="post" action="skraning.php">
 					<div>
 						<label for="nafn">Nafn á uppskriftinni:<abbr title="Nauðsynlegt að fylla út">*</abbr></label>
-						<input type="text" id="nafn" name="nafn" class="<?php is_invalid('nafn', $uppskriftin->errors()); ?>" value="<?php echo $uppskriftin->nafn; ?>">
+						<input type="text" id="nafn" name="nafn" class="<?php is_invalid('nafn', $uppskriftin->errors()); ?>" placeholder="Frönsk súkkulaðikaka" value="<?php echo $uppskriftin->nafn; ?>">
 					</div>
 
 					<div>
 						<label for="tegund">Tegund af köku:<abbr title="Nauðsynlegt að fylla út">*</abbr></label>
-						<input type="text" id="tegund" name="tegund" class="<?php is_invalid('tegund', $uppskriftin->errors()); ?>" placeholder="Kökur smökur" value="<?php echo $uppskriftin->tegund; ?>">
+						<input type="text" id="tegund" name="tegund" class="<?php is_invalid('tegund', $uppskriftin->errors()); ?>" placeholder="formkaka, spariterta, múffa, jólakaka" value="<?php echo $uppskriftin->tegund; ?>">
 					</div>
 
 					<div>
