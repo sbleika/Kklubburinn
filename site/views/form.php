@@ -1,3 +1,4 @@
+
 <?php
 header('Content-Type: text/html; charset=utf-8');
 // til hægðarauka - prentar út "invalid" sem við notum í class nafn á input ef það er villa þar
@@ -15,7 +16,7 @@ function is_invalid($field, $errors)
 	}
 }
 ?>
-	
+			
 			<section class="add">
 				<?php
 				// birtum aðeins villur ef einhverjar eru
@@ -34,19 +35,19 @@ function is_invalid($field, $errors)
 				?>
 
 				<h2>Skráning</h2>
-				<form method="post" action="index.php">
+				<form method="post" action="skraning.php">
 					<div>
-						<label for="nafn">Nafn*:</label>
+						<label for="nafn">Nafn á uppskriftinni:<abbr title="Nauðsynlegt að fylla út">*</abbr></label>
 						<input type="text" id="nafn" name="nafn" class="<?php is_invalid('nafn', $uppskriftin->errors()); ?>" value="<?php echo $uppskriftin->nafn; ?>">
 					</div>
 
 					<div>
-						<label for="tegund">Tegund*:</label>
+						<label for="tegund">Tegund af köku:<abbr title="Nauðsynlegt að fylla út">*</abbr></label>
 						<input type="text" id="tegund" name="tegund" class="<?php is_invalid('tegund', $uppskriftin->errors()); ?>" placeholder="Kökur smökur" value="<?php echo $uppskriftin->tegund; ?>">
 					</div>
 
 					<div>
-						<label for="innskraning">Uppskriftin*:</label>
+						<label for="innskraning">Uppskriftin sjálf:<abbr title="Nauðsynlegt að fylla út">*</abbr></label>
 						<textarea name="innskraning" class="<?php is_invalid('innskraning', $uppskriftin->errors()); ?>" id="innskraning" ><?php echo $uppskriftin->innskraning; ?> </textarea>
 
 					</div>
@@ -58,3 +59,4 @@ function is_invalid($field, $errors)
 					</div>
 				</form>
 			</section>
+
