@@ -95,7 +95,7 @@ img{
 	height: 150px;
 }
 
-@media screen 
+@media all
 and (min-width : 0px) 
 and (max-width : 400px) {
 	body { font: 16px/1.5em 'open_sansregular', Verdana, sans-serif;
@@ -135,7 +135,7 @@ and (max-width : 400px) {
 	}
 }
 
-@media screen 
+@media all
 and (min-width : 400px)
 and (max-width : 800px)
 {
