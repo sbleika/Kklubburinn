@@ -12,7 +12,7 @@ h2{
 h4{
 	font: bold 14px Tahoma;
 }
-header, section, footer, aside, nav, article, hgroup, img{
+header, section, footer, aside, nav, article, img{
 	display: block;
 }
 body{
@@ -31,7 +31,7 @@ body{
 	border: 2px solid black;
 	width: 80%;
 	max-width: 1024px;
-	min-height: 100%;
+	min-height: 130%;
 	background:#fff0fe;
 	margin: 0px auto;
 	text-align: left;
@@ -46,16 +46,15 @@ body{
 	list-style: none;
 	padding: 5px;
 	font: bold 14px Tahoma
-	
 }
 #texti{
 	float: left;
-	width: 68%;
+	width: 60%;
 	margin: 30px;
-	margin-bottom: 20%; /*720px, 280 eftir*/
-
+	/*margin-bottom: 20%; */
 }
 #sidebar{
+	
 	float: left;
 	width: 18%;
 	margin: 30px 0px;
@@ -63,6 +62,11 @@ body{
 	background: #eddfed;
 	border: 2px solid black;
 	margin-bottom: 20%;
+	list-style: none;
+}
+aside ul li{
+	list-style: none;
+	padding: 3%;
 }
 #the_footer{
 	position:fixed;
@@ -70,9 +74,8 @@ body{
 	clear: both;
 	width: 100%;
 	height: 25px;
-	margin-top: 100px;
+	margin-top: 10px;
 	background: #eddfed;
-	float: bottom;
 	text-align: center;
 	line-height: 10;
 	border-top: 2px solid black;
@@ -85,39 +88,89 @@ article{
 	padding: 20px;
 	margin-bottom: 15px;
 }
-article p{
-	font-size: 12px/2em;
-}
 
 img{
-	margin: 10px;
-	 height: 150px;
+	border:1px solid black;
+	margin: 5px;
+	height: 150px;
 }
 
-@media screen 
+@media all
 and (min-width : 0px) 
 and (max-width : 400px) {
 	body { font: 16px/1.5em 'open_sansregular', Verdana, sans-serif;
-}
-	#big_wrapper { width: 100%; 
 	}
+	#big_wrapper { 
+		width: 80%;
+		height: 350%; 
+		background-size: cover;
+	}
+	#texti{
+	float: left;
+	width: 80%;
+	margin: 30px;
+	/*margin-bottom: 20%; */
+
+	}
+	img{
+	border:1px solid black;
+	margin: 5px;
+	height: 150px;
+	width: 180px;
+}
 	#picture{
 		background-image:url('myndir/litla.jpg');
 		background-repeat: no-repeat;
-		width: 100%
+		width: 100%;
+	}
+	#sidebar{
+		float: left;
+		width: 50%;
+		margin: 10px;
+		margin-left: 10%;
+		padding: 30px;
+		background: #eddfed;
+		border: 2px solid black;
+		list-style: none;
 	}
 }
 
-@media screen 
+@media all
 and (min-width : 400px)
 and (max-width : 800px)
 {
 	nav ul li { padding: 0 0.3em; }
+	body { font: 14px/1.5em 'open_sansregular', Verdana, sans-serif;
+	}
+
+	#big_wrapper { 
+		width: 80%;
+		height: 250%; 
+		background-size: cover;
+	}
 	
+	#texti{
+	float: left;
+	width: 80%;
+	margin: 30px;
+
+	}
 	#picture{
 		background-image:url('myndir/midja.jpg');
 		background-repeat: no-repeat;
 		width: 100%;
 	}
+
+	#sidebar{
+	float: left;
+	width: 50%;
+	margin: 10px 0px;
+	margin-left: 7%;
+	padding: 30px;
+	background: #eddfed;
+	border: 2px solid black;
+	margin-left: 7%;
+	list-style: none;
+}
 }
 
